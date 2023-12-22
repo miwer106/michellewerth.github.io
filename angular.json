@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cv-website": {
+    "michellewerth.github.io": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/cv-website",
+            "outputPath": "dist/michellewerth.github.io",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cv-website:build:production"
+              "buildTarget": "michellewerth.github.io:build:production"
             },
             "development": {
-              "buildTarget": "cv-website:build:development"
+              "buildTarget": "michellewerth.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "cv-website:build"
+            "buildTarget": "michellewerth.github.io:build"
           }
         },
         "test": {
